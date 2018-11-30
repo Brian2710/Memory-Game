@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Memory Game !</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../../../Desktop/sauvergarde%20evaluation/memory%20gamebrian/memogametest.css">
+    <link rel="stylesheet" href="../../../Desktop/sauvergarde%20evaluation/memory%20gamebrian/Bootstrap.css">
+    <link rel="stylesheet" href="memogametest.css">
+</head>
+
+
+<body>
+
+<div class="header">
+    <h1>Memory Game</h1>
+</div>
+
+
+<div id="start"></div>
+
+
+<div id="simpleModal" class="modal">
+
+    <div class="modal-content">
+
+        <div class="modal-header">
+
+        </div>
+
+        <div class="modal-body">
+
+            <p>Tu as Gagné !</p>
+
+            <p id="score"></p>
+            <p>Nombres de coups :</p>
+            <p id="score2"> Clicks !</p>
+
+        </div>
+
+        <div class="modal-footer">
+
+            <div class="closeBtn" onclick="closeModal(),score()">REJOUER</div>
+
+        </div>
+
+    </div>
+
+</div>
+<br>
+<br>
+<section>
+<span>
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWhN5_OeiKMlaPyYJRAdaBgF696cn0u-_6nezsQDrpguldBYCOig" alt="1er carte"  height="116" width="72" border="2"  onClick="joue(0);" />
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWhN5_OeiKMlaPyYJRAdaBgF696cn0u-_6nezsQDrpguldBYCOig" alt="2er carte" height="116" width="72" border="2" onClick="joue(1);" />
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWhN5_OeiKMlaPyYJRAdaBgF696cn0u-_6nezsQDrpguldBYCOig" alt="3er carte" height="116" width="72" border="2" onClick="joue(2);" />
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWhN5_OeiKMlaPyYJRAdaBgF696cn0u-_6nezsQDrpguldBYCOig" alt="4er carte" height="116" width="72" border="2" onClick="joue(3);" />
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWhN5_OeiKMlaPyYJRAdaBgF696cn0u-_6nezsQDrpguldBYCOig" alt="5er carte" height="116" width="72" border="2" onClick="joue(4);" />
+    <br />
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWhN5_OeiKMlaPyYJRAdaBgF696cn0u-_6nezsQDrpguldBYCOig" alt="6er carte" height="116" width="72" border="2" onClick="joue(5);" />
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWhN5_OeiKMlaPyYJRAdaBgF696cn0u-_6nezsQDrpguldBYCOig" alt="7er carte" height="116" width="72" border="2" onClick="joue(6);" />
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWhN5_OeiKMlaPyYJRAdaBgF696cn0u-_6nezsQDrpguldBYCOig" alt="8er carte" height="116" width="72" border="2" onClick="joue(7);" />
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWhN5_OeiKMlaPyYJRAdaBgF696cn0u-_6nezsQDrpguldBYCOig" alt="9er carte" height="116" width="72" border="2" onClick="joue(8);" />
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWhN5_OeiKMlaPyYJRAdaBgF696cn0u-_6nezsQDrpguldBYCOig" alt="10er carte" height="116" width="72" border="2" onClick="joue(9);" />
+    <br />
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWhN5_OeiKMlaPyYJRAdaBgF696cn0u-_6nezsQDrpguldBYCOig" alt="11er carte" height="116" width="72" border="2" onClick="joue(10);" />
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWhN5_OeiKMlaPyYJRAdaBgF696cn0u-_6nezsQDrpguldBYCOig" alt="12er carte" height="116" width="72" border="2" onClick="joue(11);" />
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWhN5_OeiKMlaPyYJRAdaBgF696cn0u-_6nezsQDrpguldBYCOig" alt="13er carte" height="116" width="72" border="2" onClick="joue(12);" />
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWhN5_OeiKMlaPyYJRAdaBgF696cn0u-_6nezsQDrpguldBYCOig" alt="14er carte" height="116" width="72" border="2" onClick="joue(13);" />
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWhN5_OeiKMlaPyYJRAdaBgF696cn0u-_6nezsQDrpguldBYCOig" alt="15er carte" height="116" width="72" border="2" onClick="joue(14);" />
+    <br />
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWhN5_OeiKMlaPyYJRAdaBgF696cn0u-_6nezsQDrpguldBYCOig" alt="16er carte" height="116" width="72" border="2" onClick="joue(15);" />
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWhN5_OeiKMlaPyYJRAdaBgF696cn0u-_6nezsQDrpguldBYCOig" alt="17er carte" height="116" width="72" border="2" onClick="joue(16);" />
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWhN5_OeiKMlaPyYJRAdaBgF696cn0u-_6nezsQDrpguldBYCOig" alt="18er carte" height="116" width="72" border="2" onClick="joue(17);" />
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWhN5_OeiKMlaPyYJRAdaBgF696cn0u-_6nezsQDrpguldBYCOig" alt="19er carte" height="116" width="72" border="2" onClick="joue(18);" />
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWhN5_OeiKMlaPyYJRAdaBgF696cn0u-_6nezsQDrpguldBYCOig" alt="20er carte" height="116" width="72" border="2" onClick="joue(19);" />
+    <br />
+        <label>
+        <input type="button" value="DEMARRER" onClick="genere();newscore();" />
+        <br />
+
+
+    </label>
+</span>
+</section>
+
+
+<script src="memogametest.js"></script>
+</body>
+</html>
